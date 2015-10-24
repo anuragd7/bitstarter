@@ -1,7 +1,7 @@
 var express = require('express');
+var app = express();
 var fs = require('fs');
 //var buf = new Buffer();
-var app = express();
 var content = fs.readFileSync('index.html').toString('utf-8');
 
 app.set('port', (process.env.PORT || 5000))
